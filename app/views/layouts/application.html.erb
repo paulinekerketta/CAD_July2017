@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resapp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<div class="container">
+   <ul class="nav nav-tabs">
+		  <li><%= link_to "Home", root_path %></li>
+		  <li><%= link_to "LogIn", root_path %></li>
+		  <li><%= link_to "Menu", root_path %></li>
+		  <li><%= link_to "Order", root_path %></li>
+		  <li><%= link_to "ContactUs", root_path %></li>
+		  <li><%= link_to "Home", root_path %></li>
+  	</ul>
+  <%= yield %>
+</div>
+   </body>
+</html>
